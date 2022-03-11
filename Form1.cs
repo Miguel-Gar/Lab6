@@ -156,12 +156,13 @@ namespace Lab6
                                 he.fechaAlquiler = DRental[i1].fechaAlquiler;
                                 he.Total_a_Pagar = datosVe[i1].Precios * DRental[a].klmRecorridos;
                                 rTotal.Add(he);
-                                GaR("resultado.txt");
+                                //GaR("resultado.txt");
                             }
                         }
                     }
                 }
             }
+            GaR("resultado.txt");
             textNiit.Text = "";
             textBox1.Text = "";
             textBox2.Text= "";
@@ -176,13 +177,13 @@ namespace Lab6
         private void mostrar()
         {
             //función de mostrar los datos en los datagridview
-            dataGridView1.DataSource = null;
-            dataGridView1.Refresh();
-            dataGridView1.DataSource = cliente;
+            //dataGridView1.DataSource = null;
+            //dataGridView1.Refresh();
+            //dataGridView1.DataSource = cliente;
 
-            dataGridView2.DataSource = null;
-            dataGridView2.Refresh();
-            dataGridView2.DataSource = datosVe;
+            //dataGridView2.DataSource = null;
+            //dataGridView2.Refresh();
+            //dataGridView2.DataSource = datosVe;
         }
 
         private void button1_Click(object sender, EventArgs e)
@@ -192,9 +193,8 @@ namespace Lab6
 
         private void button2_Click(object sender, EventArgs e)
         { 
-            dataGridView3.DataSource = null;
-            dataGridView3.Refresh();
-            dataGridView3.DataSource = rTotal;
+            Form2 form2 = new Form2();
+            form2.ShowDialog(); 
         }
     }
 }

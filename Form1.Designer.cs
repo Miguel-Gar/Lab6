@@ -55,15 +55,8 @@
             this.label13 = new System.Windows.Forms.Label();
             this.label14 = new System.Windows.Forms.Label();
             this.textPrecio = new System.Windows.Forms.TextBox();
-            this.button1 = new System.Windows.Forms.Button();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.dataGridView2 = new System.Windows.Forms.DataGridView();
-            this.dataGridView3 = new System.Windows.Forms.DataGridView();
             this.textBox4 = new System.Windows.Forms.TextBox();
             this.button2 = new System.Windows.Forms.Button();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView3)).BeginInit();
             this.SuspendLayout();
             // 
             // textNiit
@@ -96,9 +89,10 @@
             // 
             // buttonAgrgar
             // 
+            this.buttonAgrgar.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.buttonAgrgar.Location = new System.Drawing.Point(16, 242);
             this.buttonAgrgar.Name = "buttonAgrgar";
-            this.buttonAgrgar.Size = new System.Drawing.Size(75, 23);
+            this.buttonAgrgar.Size = new System.Drawing.Size(100, 23);
             this.buttonAgrgar.TabIndex = 5;
             this.buttonAgrgar.Text = "AGREGAR";
             this.buttonAgrgar.UseVisualStyleBackColor = true;
@@ -327,40 +321,6 @@
             this.textPrecio.Size = new System.Drawing.Size(100, 20);
             this.textPrecio.TabIndex = 29;
             // 
-            // button1
-            // 
-            this.button1.Location = new System.Drawing.Point(97, 242);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(75, 23);
-            this.button1.TabIndex = 30;
-            this.button1.Text = "Ir a Tablas";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
-            // 
-            // dataGridView1
-            // 
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(188, 242);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(260, 179);
-            this.dataGridView1.TabIndex = 31;
-            // 
-            // dataGridView2
-            // 
-            this.dataGridView2.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView2.Location = new System.Drawing.Point(465, 242);
-            this.dataGridView2.Name = "dataGridView2";
-            this.dataGridView2.Size = new System.Drawing.Size(282, 179);
-            this.dataGridView2.TabIndex = 32;
-            // 
-            // dataGridView3
-            // 
-            this.dataGridView3.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView3.Location = new System.Drawing.Point(626, 36);
-            this.dataGridView3.Name = "dataGridView3";
-            this.dataGridView3.Size = new System.Drawing.Size(282, 179);
-            this.dataGridView3.TabIndex = 33;
-            // 
             // textBox4
             // 
             this.textBox4.Location = new System.Drawing.Point(437, 195);
@@ -370,9 +330,10 @@
             // 
             // button2
             // 
-            this.button2.Location = new System.Drawing.Point(543, 213);
+            this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button2.Location = new System.Drawing.Point(460, 242);
             this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(75, 23);
+            this.button2.Size = new System.Drawing.Size(118, 23);
             this.button2.TabIndex = 35;
             this.button2.Text = "Ir a Tablas";
             this.button2.UseVisualStyleBackColor = true;
@@ -382,13 +343,9 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(920, 486);
+            this.ClientSize = new System.Drawing.Size(651, 301);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.textBox4);
-            this.Controls.Add(this.dataGridView3);
-            this.Controls.Add(this.dataGridView2);
-            this.Controls.Add(this.dataGridView1);
-            this.Controls.Add(this.button1);
             this.Controls.Add(this.textPrecio);
             this.Controls.Add(this.label14);
             this.Controls.Add(this.label13);
@@ -418,9 +375,6 @@
             this.Controls.Add(this.textNiit);
             this.Name = "Form1";
             this.Text = "Ingresar datos";
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView3)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -455,10 +409,6 @@
         private System.Windows.Forms.Label label13;
         private System.Windows.Forms.Label label14;
         private System.Windows.Forms.TextBox textPrecio;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.DataGridView dataGridView1;
-        private System.Windows.Forms.DataGridView dataGridView2;
-        private System.Windows.Forms.DataGridView dataGridView3;
         private System.Windows.Forms.TextBox textBox4;
         private System.Windows.Forms.Button button2;
     }
